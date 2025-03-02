@@ -10,7 +10,7 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
 * ![GDSCRIPT](https://img.shields.io/badge/GDScript-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white)  
 
 
-## Instando a Godot
+## Instalando a Godot
 1. Download: Acesse o site oficial para baixar a versão 4.3. https://godotengine.org/
 <br>
 
