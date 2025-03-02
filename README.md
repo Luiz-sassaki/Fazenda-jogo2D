@@ -27,7 +27,7 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
    [git clone https aqui](https://github.com/Luiz-sassaki/Godot-jogo2d.git)
    ```
 
- ## Aplicação na prática
+ ## Jogo na prática
 
 <B>TELA INICIAL</B><br>
 <img src="meu-primeiro-jogo-2d/images/fazenda.png" alt="tela inicial">
