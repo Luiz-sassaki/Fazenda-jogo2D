@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://0bq5tsl417en"]
+
+[ext_resource type="Script" path="res://fazendeira.gd" id="1_gd3he"]
+[ext_resource type="Texture2D" uid="uid://tp5so0dueiyt" path="res://walk and idle.png" id="1_p7gb5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ii3s"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8nfi"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adm6q"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx6nv"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_miugo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ii3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8nfi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adm6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx6nv")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5yf1"]
+size = Vector2(11, 5)
+
+[node name="fazendeira" type="CharacterBody2D"]
+script = ExtResource("1_gd3he")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_miugo")
+animation = &"parado"
+autoplay = "parado"
+frame_progress = 0.974634
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 8.5)
+shape = SubResource("RectangleShape2D_l5yf1")
