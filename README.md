@@ -30,8 +30,7 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
  ## Aplicação na prática
 
 <B>TELA INICIAL</B><br>
-<img src="Fazenda-jogo2D/meu-primeiro-jogo-2d
-/images//fazenda.png" alt="tela inicial">
+<img src="<img src="images/meu-primeiro-jogo-2d/fazenda.png" alt="tela inicial">
 
 
 ## Desenvolvedor
