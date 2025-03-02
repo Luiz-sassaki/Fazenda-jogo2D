@@ -24,7 +24,7 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
 
 5. clonar o repositório
     ```sh
-   [git clone https aqui](https://github.com/Luiz-sassaki/Godot-jogo2d.git)
+   https://github.com/Luiz-sassaki/Fazenda-jogo2D.git
    ```
 
  ## Jogo na prática
