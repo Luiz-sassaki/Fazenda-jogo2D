@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://b7psmrximcy1c"]
+
+[ext_resource type="Texture2D" uid="uid://bcbsqnyi4yquu" path="res://vegetais.png" id="1_vsumd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq0nv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ht5y"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyvd8"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ont82"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_echvt"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avpe0"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcnp2"]
+atlas = ExtResource("1_vsumd")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgs18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ht5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yyvd8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ont82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_echvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avpe0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcnp2")
+}],
+"loop": false,
+"name": &"tomate",
+"speed": 5.0
+}]
+
+[node name="tomate" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kq0nv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vgs18")
+animation = &"tomate"
+frame = 5
+frame_progress = 0.549601
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

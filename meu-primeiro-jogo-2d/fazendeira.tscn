@@ -1,7 +1,39 @@
-[gd_scene load_steps=9 format=3 uid="uid://0bq5tsl417en"]
+[gd_scene load_steps=17 format=3 uid="uid://0bq5tsl417en"]
 
 [ext_resource type="Script" path="res://fazendeira.gd" id="1_gd3he"]
 [ext_resource type="Texture2D" uid="uid://tp5so0dueiyt" path="res://walk and idle.png" id="1_p7gb5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibm6l"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(168, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi2an"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(144, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45qj4"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(120, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axgnc"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(96, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vofk2"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifn5b"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgmsq"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyq7y"]
+atlas = ExtResource("1_p7gb5")
+region = Rect2(0, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ii3s"]
 atlas = ExtResource("1_p7gb5")
@@ -23,6 +55,35 @@ region = Rect2(72, 0, 24, 24)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ibm6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi2an")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45qj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axgnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vofk2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifn5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgmsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyq7y")
+}],
+"loop": true,
+"name": &"andando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1ii3s")
 }, {
 "duration": 1.0,
@@ -36,7 +97,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"parado",
-"speed": 3.0
+"speed": 2.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l5yf1"]
@@ -48,8 +109,6 @@ script = ExtResource("1_gd3he")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_miugo")
 animation = &"parado"
-autoplay = "parado"
-frame_progress = 0.974634
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 8.5)
