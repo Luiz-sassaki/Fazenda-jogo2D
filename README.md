@@ -33,8 +33,11 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
 <img src="meu-primeiro-jogo-2d/images/fazenda.png" alt="tela inicial">
 
 
-## Implementção de requisitos
-Agora a fazendeira pode entrar e sair da casa.
+## Atualização do jogo
+Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para dentro de sua casa.
+<B>DENTRO DA CASA</B><br>
+<img src="meu-primeiro-jogo-2d/images/casa.png" alt="tela inicial">
+
 
 
 ## Desenvolvedor
