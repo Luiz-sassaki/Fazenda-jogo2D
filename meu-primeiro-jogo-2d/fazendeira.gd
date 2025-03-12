@@ -35,3 +35,11 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("down"):
 		animacao.flip_h = false
 		animacao.play("andando")
+
+
+func _on_porta_casa_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file.bind("res://dentro_casa.tscn").call.call_deferred()
+
+
+func _on_porta_saida_casa_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file.bind("res://principal.tscn").call_deferred()

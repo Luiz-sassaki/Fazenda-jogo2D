@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bak78rgkrdv2q"]
+[gd_scene load_steps=5 format=3 uid="uid://bak78rgkrdv2q"]
 
 [ext_resource type="PackedScene" uid="uid://8f8prrem5r8b" path="res://cenario_grama.tscn" id="1_x5vq4"]
 [ext_resource type="PackedScene" uid="uid://0bq5tsl417en" path="res://fazendeira.tscn" id="2_cmfbi"]
 [ext_resource type="PackedScene" uid="uid://b7psmrximcy1c" path="res://tomate.tscn" id="3_mm1db"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y2v6n"]
+size = Vector2(23, 40)
 
 [node name="principal" type="Node2D"]
 
@@ -22,3 +25,11 @@ zoom = Vector2(2, 2)
 [node name="tomate" parent="Vegetais" instance=ExtResource("3_mm1db")]
 position = Vector2(472, 608)
 monitoring = false
+
+[node name="porta_casa" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="porta_casa"]
+position = Vector2(531.5, 541)
+shape = SubResource("RectangleShape2D_y2v6n")
+
+[connection signal="body_entered" from="porta_casa" to="fazendeira" method="_on_porta_casa_body_entered"]
