@@ -33,6 +33,9 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
 <img src="meu-primeiro-jogo-2d/images/fazenda.png" alt="tela inicial">
 
 
+## Atualização do jogo
+
+
 ## Desenvolvedor
 
 <a href="https://github.com/Luiz-sassaki"/>
