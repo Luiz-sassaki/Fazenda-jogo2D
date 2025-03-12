@@ -34,6 +34,7 @@ O jogo da Fazendeira consiste em uma mistura de aprendizado com entretenimento, 
 
 
 ## Atualização do jogo
+Agora a fazendeira pode entrar e sair da casa.
 
 
 ## Desenvolvedor
