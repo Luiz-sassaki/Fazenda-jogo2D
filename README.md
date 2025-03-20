@@ -41,6 +41,16 @@ Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para de
 
 
 
+## Atualização do jogo
+Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para dentro de sua casa.
+
+<B>INTERAÇÃO COM NPC</B><br>
+<img src="meu-primeiro-jogo-2d/images/npc.png" alt="tela inicial">
+
+
+
+
+
 ## Desenvolvedor
 
 <a href="https://github.com/Luiz-sassaki"/>
