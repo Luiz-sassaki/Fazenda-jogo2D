@@ -47,16 +47,6 @@ Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para de
 <img src="meu-primeiro-jogo-2d/images/npc.png" alt="tela inicial">
 
 
-## Atualização do jogo
-Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para dentro de sua casa.
-
-<B>NOVIDADES EM BREVE</B><br>
-<img src="meu-primeiro-jogo-2d/images/novidades.png" alt="tela inicial">
-
-
-## Atualização do jogo
-Agora a fazendeira é capaz de entrar no esconderijo que vai diretamente para dentro de sua casa.
-
 <B>COLOCAR QUIZ INTERATIVO</B><br>
 <img src="meu-primeiro-jogo-2d/images/novidades.png" alt="tela inicial">
 
